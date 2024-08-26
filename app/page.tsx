@@ -6,7 +6,7 @@ import { authOptions } from "./api/auth/[...nextauth]/route";
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
-
+  console.log(session); //si pas de nom alors email (match avant l'@)
   return (
     <main>
       <h1>Hello {session && <span>{session.user!.name}</span>}</h1>
