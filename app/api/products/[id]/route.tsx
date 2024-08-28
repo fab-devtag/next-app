@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import schema from "../schema";
 import prisma from "@/prisma/client";
 
-export async function GET(
+/* export async function GET(
   request: NextRequest,
   { params }: { params: { id: string } }
 ) {
@@ -61,4 +61,4 @@ export async function DELETE(
   });
 
   return NextResponse.json({});
-}
+} */
