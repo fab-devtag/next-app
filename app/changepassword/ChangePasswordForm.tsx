@@ -31,6 +31,7 @@ const ChangePasswordForm = ({ email }: Props) => {
     if (response.ok) {
       setSuccess("Password changé");
     } else {
+      console.log(data);
       setError(data.error || "An error occured");
     }
   };

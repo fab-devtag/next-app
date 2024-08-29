@@ -24,7 +24,10 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const passwordMatch = bcrypt.compare(body.oldPassword, user.hashedPassword);
+  const passwordMatch = await bcrypt.compare(
+    body.oldPassword,
+    user.hashedPassword
+  );
 
   if (!passwordMatch)
     return NextResponse.json(
