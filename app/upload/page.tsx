@@ -1,16 +1,16 @@
 "use client";
 import React, { useState } from "react";
-import { CldUploadWidget, CldImage } from "next-cloudinary";
+/* import { CldUploadWidget, CldImage } from "next-cloudinary";
 
 interface CloudinaryResult {
   public_id: string;
-}
+} */
 const UploadPage = () => {
-  const [publicId, setPublicId] = useState("");
+  /* const [publicId, setPublicId] = useState(""); */
 
   return (
     <>
-      {publicId && (
+      {/* {publicId && (
         <CldImage src={publicId} width={270} height={180} alt="random image" />
       )}
       <CldUploadWidget
@@ -48,7 +48,7 @@ const UploadPage = () => {
             Upload
           </button>
         )}
-      </CldUploadWidget>
+      </CldUploadWidget> */}
     </>
   );
 };
