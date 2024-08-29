@@ -7,7 +7,7 @@ import prisma from "@/prisma/client";
 import bcrypt from "bcrypt";
 
 export const authOptions: NextAuthOptions = {
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: process.env.AUTH_SECRET,
   adapter: PrismaAdapter(prisma),
   providers: [
     CredentialsProvider({
